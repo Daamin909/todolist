@@ -6,7 +6,9 @@ export default function App() {
   const [tasks, setTasks] = useState([]);
 
   function addTask() {
-    if (task.length === 0) return;
+    if (task.length === 0) {
+      return;
+    }
     setTasks([...tasks, task]);
     setTask("");
   }
